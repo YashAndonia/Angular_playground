@@ -6,7 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./new.component.css']
 })
 export class NewComponent implements OnInit {
-
+  firstName:string = 'jayesh';
+  age:number = 18;
+  image:string= "assets/img/chk_sau.jpeg";
+  empName():string{
+    return this.firstName+" " + this.age;
+  }
   constructor() { }
 
   ngOnInit() {
